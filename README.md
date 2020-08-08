@@ -53,3 +53,33 @@ def fancy_find(search_within,search_for):
         return search_for+" was not found within "+search_within+"!"
 print(fancy_find("ABCDEF", "DEF"))
 print(fancy_find("ABCDEF", "GHI"))
+
+
+
+
+
+
+
+
+3) 4.2.5 Coding Exercise 1
+#Write a function called "num_words" that accepts a string 
+#as an argument and returns the number of words in the 
+#string. You can assume all words are separated by a space,
+#and that the string has at least one word. You do not need
+#to worry about punctuation.
+#
+#For example:
+#
+#  num_words("Veni, Vidi, Vici.") -> 3
+#
+#This time, you may not use any loops. Hint: split() might
+#come in handy.
+
+def num_words(str1):
+  res = len(str1.split())
+  return res
+print(num_words("Vini, Vidi, Vici."))
+print(num_words("Hello, world!"))
+print(num_words("HeyDavidwhyaren'ttherespacesinthissentence"))
+
+
